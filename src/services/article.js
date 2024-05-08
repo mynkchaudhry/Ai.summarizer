@@ -14,7 +14,7 @@ export const articleApi = createApi({
     }),
     endpoints: (builder) => ({
         getSummary: builder.query({
-            query: (params) => `/summarize?url=${encodeURIComponent(params.articleUrl)}&length=10`,
+            query: (params) => `/summarize?url=${encodeURIComponent(params.articleUrl)}&length=20`,
             onError: (error) => {
                 console.error('An error occurred:', error);
                 // Handle error (e.g., show error message to user)
